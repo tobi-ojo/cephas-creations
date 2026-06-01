@@ -3,57 +3,40 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-
+  html { scroll-behavior: smooth; }
   body {
     @apply bg-cream font-sans text-dark-800 antialiased;
     overflow-x: hidden;
   }
-
-  h1, h2, h3, h4 {
-    @apply font-serif;
-  }
+  h1, h2, h3, h4 { @apply font-serif; }
 }
 
 @layer components {
   .btn-gold {
-    @apply bg-gold-600 text-cream px-6 py-3 text-xs font-medium tracking-widest uppercase
-           transition-all duration-200 hover:bg-gold-800 active:scale-95 rounded-sm;
+    @apply bg-brand-600 text-white px-6 py-3 text-xs font-medium tracking-widest uppercase
+           transition-all duration-200 hover:bg-brand-700 active:scale-95 rounded-sm;
   }
-
   .btn-outline {
-    @apply border border-gold-600 text-gold-600 px-6 py-3 text-xs font-medium tracking-widest uppercase
-           transition-all duration-200 hover:bg-gold-50 active:scale-95 rounded-sm;
+    @apply border border-brand-400 text-brand-300 px-6 py-3 text-xs font-medium tracking-widest uppercase
+           transition-all duration-200 hover:bg-brand-600/20 active:scale-95 rounded-sm;
   }
-
   .section-label {
-    @apply text-gold-600 text-xs font-medium tracking-[0.14em] uppercase mb-3;
+    @apply text-brand-500 text-xs font-medium tracking-[0.14em] uppercase mb-3;
   }
-
   .section-title {
     @apply font-serif text-4xl md:text-5xl font-bold leading-tight mb-4;
   }
-
   .input-field {
     @apply w-full border border-gray-200 bg-white px-4 py-3 text-sm text-dark-800
-           placeholder-gray-400 focus:outline-none focus:border-gold-600 focus:ring-1
-           focus:ring-gold-600 transition-colors duration-200 rounded-sm;
+           placeholder-gray-400 focus:outline-none focus:border-brand-500 focus:ring-1
+           focus:ring-brand-500 transition-colors duration-200 rounded-sm;
   }
-
   .form-label {
     @apply block text-xs font-medium tracking-wide text-dark-700 mb-1.5 uppercase;
   }
 }
 
-/* Calendly inline embed override */
-.calendly-inline-widget {
-  min-width: 320px;
-  height: 700px;
-}
-
-/* Custom scrollbar */
+.calendly-inline-widget { min-width: 320px; height: 700px; }
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #faf8f4; }
-::-webkit-scrollbar-thumb { background: #8B6914; border-radius: 3px; }
+::-webkit-scrollbar-track { background: #f0f4ff; }
+::-webkit-scrollbar-thumb { background: #1d4ed8; border-radius: 3px; }
