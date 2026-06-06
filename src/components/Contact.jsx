@@ -7,9 +7,9 @@ import { FaWhatsapp } from 'react-icons/fa'
 // ─────────────────────────────────────────────
 // CONFIGURATION — fill these in before deploying
 // ─────────────────────────────────────────────
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID'   // from emailjs.com dashboard
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'  // from emailjs.com dashboard
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY'   // from emailjs.com account > API keys
+const EMAILJS_SERVICE_ID  = 'service_iboboc8'   // from emailjs.com dashboard
+const EMAILJS_TEMPLATE_ID = 'template_830n4m3'  // from emailjs.com dashboard
+const EMAILJS_PUBLIC_KEY  = 'YZPa35qCAVoEp55gM'  // from emailjs.com account > API keys
 
 const OWNER_WHATSAPP = '2348000000000'           // owner's WhatsApp number with country code, no +
 
